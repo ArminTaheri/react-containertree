@@ -1,15 +1,16 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, { Component } from "react";
+import { render } from "react-dom";
 
-import Example from '../../src'
+import ReactContainerTree from "../../src";
 
 class Demo extends Component {
   render() {
-    return <div>
-      <h1>react-containertree Demo</h1>
-      <Example/>
-    </div>
+    return (
+      <div>
+        <ReactContainerTree width={1024} height={1024} fileName="data.json" />
+      </div>
+    );
   }
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector("#demo"));
